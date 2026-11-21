@@ -6,63 +6,67 @@
    'https://wa.me/201001234567'  (or just '201001234567').
    Leave empty and the site shows a message instead of sending.
    ============================================================ */
-const WHATSAPP_URL = '';
+const WHATSAPP_URL = 'https://wa.me/201113349847';
 
 /* ============================================================
    CATALOG
-   To add a photo: put the file in assets/products/ and set
-   image to its file name, e.g. image: 'y-ysl.jpg'.
+   Per product (all optional):
+   image:   main photo file name in assets/products/  e.g. 'y-1.jpg'
+   gallery: extra photos, e.g. ['y-2.jpg', 'y-3.jpg']
+   specs:   details shown in the product window,
+            e.g. { 'Size': '100 ml', 'Type': 'Eau de Parfum' }
+   desc:    one short sentence about the product
    Prices are in EGP.
    ============================================================ */
 const CATEGORIES = ['Men', 'Women', 'Unisex', 'Boxes & Sets'];
 
 const CATALOG = {
   'Men': [
-    { name: 'Y (Yves Saint Laurent)', price: 650, image: '' },
-    { name: 'Laverne Sense', price: 650, image: '' },
-    { name: 'Laverne Balance', price: 750, image: '' },
-    { name: '1 Million Gold', price: 750, image: '' },
-    { name: 'Stronger With You Intensely', price: 800, image: '' },
-    { name: 'Stronger With You Absolutely', price: 800, image: '' },
-    { name: 'Fakhar Lattafa', price: 950, image: '' },
-    { name: 'Versace', price: 600, image: '' },
-    { name: 'Half Moon', price: 650, image: '' },
-    { name: 'Dior Homme Intense', price: 650, image: '' },
-    { name: 'Parfums de Marly', price: 650, image: '' },
-    { name: 'Arrogate Blue', price: 950, image: '' },
-    { name: 'Issey Miyake', price: 750, image: '' }
+    { name: 'Y (Yves Saint Laurent)', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Laverne Sense', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Laverne Balance', price: 750, image: '', gallery: [], specs: {}, desc: '' },
+    { name: '1 Million Gold', price: 750, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Stronger With You Intensely', price: 800, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Stronger With You Absolutely', price: 800, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Fakhar Lattafa', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Versace', price: 600, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Half Moon', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Dior Homme Intense', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Parfums de Marly', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Arrogate Blue', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Issey Miyake', price: 750, image: '', gallery: [], specs: {}, desc: '' }
   ],
   'Women': [
-    { name: 'Sakina', price: 800, image: '' },
-    { name: 'Eman', price: 800, image: '' },
-    { name: 'Delina', price: 850, image: '' },
-    { name: 'Gissah', price: 950, image: '' },
-    { name: 'Olympea Flora', price: 650, image: '' },
-    { name: 'Vanilla Powder', price: 550, image: '' },
-    { name: 'Libre Mini', price: 100, image: '' },
-    { name: 'Good Girl', price: 100, image: '' },
-    { name: 'Laverne Splash', price: 200, image: '' },
-    { name: 'Arrogate Pink', price: 950, image: '' },
-    { name: 'Lipstick', price: 800, image: '' },
-    { name: 'Victoria (30ml)', price: 100, image: '' }
+    { name: 'Sakina', price: 800, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Eman', price: 800, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Delina', price: 850, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Gissah', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Olympea Flora', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Vanilla Powder', price: 550, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Libre Mini', price: 100, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Good Girl', price: 100, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Laverne Splash', price: 200, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Arrogate Pink', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Lipstick', price: 800, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Victoria (30ml)', price: 100, image: '', gallery: [], specs: {}, desc: '' }
   ],
   'Unisex': [
-    { name: 'Baccarat Rouge 540', price: 650, image: '' },
-    { name: 'Vintage Tobacco', price: 650, image: '' },
-    { name: 'Erba Pura', price: 950, image: '' },
-    { name: 'Tom Ford', price: 650, image: '' },
-    { name: 'Black Afgano', price: 700, image: '' }
+    { name: 'Baccarat Rouge 540', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Vintage Tobacco', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Erba Pura', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Tom Ford', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Black Afgano', price: 700, image: '', gallery: [], specs: {}, desc: '' }
   ],
   'Boxes & Sets': [
-    { name: 'Risk Box', price: 1350, image: '' },
-    { name: 'Arrogate Box', price: 1600, image: '' },
-    { name: 'Laverne Bag', price: 1350, image: '' },
-    { name: 'Assaf Sunglasses Box', price: 2600, image: '' },
-    { name: 'Assaf Box (30ml)', price: 950, image: '' },
-    { name: 'The Body Shop Box', price: 650, image: '' },
-    { name: 'Bianco Latte Set', price: 750, image: '' },
-    { name: 'Musk Set', price: 900, image: '' },
-    { name: 'Assaf 3-Piece Set', price: 500, image: '' }
+    { name: 'Risk Box', price: 1350, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Arrogate Box', price: 1600, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Laverne Bag', price: 1350, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Assaf Sunglasses Box', price: 2600, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Assaf Box (30ml)', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'The Body Shop Box', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Bianco Latte Set', price: 750, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Musk Set', price: 900, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Assaf 3-Piece Set', price: 500, image: '', gallery: [], specs: {}, desc: '' }
   ]
 };
 
@@ -70,7 +74,7 @@ const CATALOG = {
 const PRODUCTS = [];
 CATEGORIES.forEach(function (cat, ci) {
   CATALOG[cat].forEach(function (p, i) {
-    PRODUCTS.push({ id: 'p' + ci + '-' + i, category: cat, name: p.name, price: p.price, image: p.image });
+    PRODUCTS.push({ id: 'p' + ci + '-' + i, category: cat, name: p.name, price: p.price, image: p.image, gallery: p.gallery || [], specs: p.specs || {}, desc: p.desc || '' });
   });
 });
 
@@ -146,7 +150,7 @@ function setCategory(c) {
   renderGrid();
 }
 
-function photoBox(p) {
+function photoBox(p, file) {
   const box = el('div', 'photo');
   function placeholder() {
     box.textContent = '';
@@ -158,12 +162,12 @@ function photoBox(p) {
     ph.appendChild(el('span', '', 'Loly Boutique'));
     box.appendChild(ph);
   }
-  if (p.image) {
+  if (file) {
     const img = el('img');
     img.loading = 'lazy';
     img.alt = p.name;
     img.addEventListener('error', placeholder);
-    img.src = 'assets/products/' + p.image;
+    img.src = 'assets/products/' + file;
     box.appendChild(img);
   } else {
     placeholder();
@@ -178,8 +182,16 @@ function renderGrid() {
     .forEach(function (p) {
       const card = el('article', 'card');
       card.appendChild(el('span', 'cat', p.category));
-      card.appendChild(photoBox(p));
-      card.appendChild(el('h3', '', p.name));
+      card.appendChild(photoBox(p, p.image));
+      const h = el('h3');
+      const tb = el('button', 'title-btn', p.name);
+      tb.type = 'button';
+      tb.addEventListener('click', function () { openProduct(p.id); });
+      h.appendChild(tb);
+      card.appendChild(h);
+      card.addEventListener('click', function (e) {
+        if (!e.target.closest('.add') && !e.target.closest('.title-btn')) openProduct(p.id);
+      });
       card.appendChild(el('p', 'price', money(p.price)));
       const add = el('button', 'add', 'Add to Cart');
       add.type = 'button';
@@ -296,6 +308,65 @@ function closeMenu() {
   $('burger').setAttribute('aria-expanded', 'false');
 }
 
+/* ---------- Product details ---------- */
+let currentId = null;
+let pmFiles = [];
+
+function showPmImage(i) {
+  const p = findProduct(currentId);
+  const main = $('pmMain');
+  main.textContent = '';
+  main.appendChild(photoBox(p, pmFiles[i] || ''));
+  const th = $('pmThumbs');
+  th.textContent = '';
+  if (pmFiles.length < 2) return;
+  pmFiles.forEach(function (f, idx) {
+    const b = el('button', 'thumb' + (idx === i ? ' active' : ''));
+    b.type = 'button';
+    b.setAttribute('aria-label', 'Photo ' + (idx + 1));
+    const im = el('img');
+    im.alt = '';
+    im.addEventListener('error', function () { b.style.display = 'none'; });
+    im.src = 'assets/products/' + f;
+    b.appendChild(im);
+    b.addEventListener('click', function () { showPmImage(idx); });
+    th.appendChild(b);
+  });
+}
+
+function openProduct(id) {
+  const p = findProduct(id);
+  if (!p) return;
+  currentId = id;
+  pmFiles = [p.image].concat(p.gallery).filter(Boolean);
+  $('pmCat').textContent = p.category;
+  $('pmTitle').textContent = p.name;
+  $('pmPrice').textContent = money(p.price);
+  $('pmDesc').textContent = p.desc;
+  $('pmDesc').hidden = !p.desc;
+  const dl = $('pmSpecs');
+  dl.textContent = '';
+  const keys = Object.keys(p.specs);
+  keys.forEach(function (k) {
+    const row = el('div');
+    row.appendChild(el('dt', '', k));
+    row.appendChild(el('dd', '', p.specs[k]));
+    dl.appendChild(row);
+  });
+  if (!keys.length && !p.desc) $('pmDesc').textContent = 'More details coming soon.';
+  if (!keys.length && !p.desc) $('pmDesc').hidden = false;
+  showPmImage(0);
+  $('pModal').classList.add('open');
+  $('pModal').setAttribute('aria-hidden', 'false');
+  document.body.classList.add('locked');
+}
+function closeProduct() {
+  if (!$('pModal').classList.contains('open')) return;
+  $('pModal').classList.remove('open');
+  $('pModal').setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('locked');
+}
+
 /* ---------- WhatsApp order ---------- */
 function buildWhatsAppLink(text) {
   const base = WHATSAPP_URL.trim();
@@ -351,6 +422,9 @@ function init() {
   $('closeModal').addEventListener('click', closeModal);
   $('modal').addEventListener('click', function (e) { if (e.target === $('modal')) closeModal(); });
   $('orderForm').addEventListener('submit', submitOrder);
+  $('closeP').addEventListener('click', closeProduct);
+  $('pModal').addEventListener('click', function (e) { if (e.target === $('pModal')) closeProduct(); });
+  $('pmAdd').addEventListener('click', function () { if (currentId) addToCart(currentId); });
 
   $('burger').addEventListener('click', function () {
     const open = $('nav').classList.toggle('open');
@@ -364,6 +438,7 @@ function init() {
   });
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape') return;
+    closeProduct();
     closeModal();
     closeCart();
     closeMenu();
