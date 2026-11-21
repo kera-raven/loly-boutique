@@ -11,8 +11,8 @@ const WHATSAPP_URL = 'https://wa.me/201113349847';
 /* ============================================================
    CATALOG
    Per product (all optional):
-   image:   main photo file name in assets/products/  e.g. 'y-1.jpg'
-   gallery: extra photos, e.g. ['y-2.jpg', 'y-3.jpg']
+   image:   main photo file name in assets/products/  e.g. 'delina.jpg'
+   gallery: extra photos, e.g. ['delina-2.jpg', 'delina-3.jpg']
    specs:   details shown in the product window,
             e.g. { 'Size': '100 ml', 'Type': 'Eau de Parfum' }
    desc:    one short sentence about the product
@@ -39,7 +39,7 @@ const CATALOG = {
   'Women': [
     { name: 'Sakina', price: 800, image: '', gallery: [], specs: {}, desc: '' },
     { name: 'Eman', price: 800, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Delina', price: 850, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Delina La Rosée', price: 850, image: 'delina.jpg', gallery: [], specs: { 'Size': '75 ml' }, desc: '' },
     { name: 'Gissah', price: 950, image: '', gallery: [], specs: {}, desc: '' },
     { name: 'Olympea Flora', price: 650, image: '', gallery: [], specs: {}, desc: '' },
     { name: 'Vanilla Powder', price: 550, image: '', gallery: [], specs: {}, desc: '' },
@@ -154,6 +154,7 @@ function photoBox(p, file) {
   const box = el('div', 'photo');
   function placeholder() {
     box.textContent = '';
+    box.classList.remove('has-img');
     const ph = el('div', 'ph');
     const logo = el('img');
     logo.src = LOGO;
@@ -168,6 +169,7 @@ function photoBox(p, file) {
     img.alt = p.name;
     img.addEventListener('error', placeholder);
     img.src = 'assets/products/' + file;
+    box.classList.add('has-img');
     box.appendChild(img);
   } else {
     placeholder();
