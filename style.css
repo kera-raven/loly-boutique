@@ -161,6 +161,15 @@ form .invalid{border-color:#e07a7a}
 .specs dd{margin:0;color:#f1e6e4;text-align:right}
 @media (max-width:700px){.pm{grid-template-columns:1fr}}
 
+/* Section headings (All view) */
+.sec-head{grid-column:1/-1;display:flex;align-items:center;gap:18px;margin:8px 0 2px;color:var(--blush);font-size:clamp(1.3rem,2.6vw,1.8rem);letter-spacing:.04em;white-space:nowrap}
+.sec-head::before,.sec-head::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent)}
+.sec-head:not(:first-child){margin-top:44px}
+
+/* Neon glow on hover / touch */
+.card{transition:box-shadow .25s ease,transform .25s ease}
+.card:hover,.card.glow,.card:focus-within{transform:translateY(-3px);box-shadow:0 0 0 1px var(--blush),0 0 16px rgba(240,170,190,.9),0 0 38px rgba(230,150,175,.65),0 0 80px rgba(201,149,155,.4)}
+
 /* Responsive */
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
