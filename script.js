@@ -22,9 +22,9 @@ const CATEGORIES = ['Men', 'Women', 'Unisex', 'Boxes & Sets'];
 
 const CATALOG = {
   'Men': [
-    { name: 'Y (Yves Saint Laurent)', price: 650, image: '', gallery: [], specs: {}, desc: 'A fresh, clean woody-aromatic scent with apple, ginger and sage over amber woods.' },
-    { name: 'Laverne Balance', price: 750, image: '', gallery: [], specs: {}, desc: 'Fresh woody and aromatic blend with crisp spices and a clean modern base.' },
-    { name: '1 Million Gold', price: 750, image: '', gallery: [], specs: {}, desc: 'Bold warm amber and spicy leather scent with a rich sweet finish.' },
+    { name: 'Y (Yves Saint Laurent)', price: 650, image: 'Y (Yves Saint Laurent).jpg', gallery: [], specs: {}, desc: 'A fresh, clean woody-aromatic scent with apple, ginger and sage over amber woods.' },
+    { name: 'Laverne Balance', price: 750, image: 'laverne balance.jpg', gallery: [], specs: {}, desc: 'Fresh woody and aromatic blend with crisp spices and a clean modern base.' },
+    { name: '1 Million Gold', price: 750, image: '1 Million Gold.jpg', gallery: [], specs: {}, desc: 'Bold warm amber and spicy leather scent with a rich sweet finish.' },
     { name: 'Stronger With You Intensely', price: 800, image: '', gallery: [], specs: {}, desc: 'A warm, sweet amber-vanilla scent with spicy and woody touches.' },
     { name: 'Stronger With You Absolutely', price: 800, image: '', gallery: [], specs: {}, desc: 'A deeper, richer take on the Stronger With You line.' },
     { name: 'Fakhar Lattafa', price: 950, image: '', gallery: [], specs: {}, desc: 'Fresh spicy and fruity-woody fragrance with a smooth warm trail.' },
@@ -36,17 +36,17 @@ const CATALOG = {
     { name: 'Issey Miyake', price: 750, image: '', gallery: [], specs: {}, desc: 'A fresh, clean citrus-aquatic scent with a touch of spice and soft woods.' }
   ],
   'Women': [
-    { name: 'Laverne Sense', price: 650, image: '', gallery: [], specs: {}, desc: 'A soft floral-fruity scent: blackcurrant and tangerine, a jasmine and iris heart, and a musky base.' },
-    { name: 'Sakina', price: 800, image: '', gallery: [], specs: {}, desc: 'Soft floral and warm musky scent with a smooth, elegant touch.' },
-    { name: 'Eman', price: 800, image: '', gallery: [], specs: {}, desc: 'Feminine floral-fruity fragrance with a sweet, refined base.' },
+    { name: 'Laverne Sense', price: 650, image: 'Laverne Sense.jpg', gallery: [], specs: {}, desc: 'A soft floral-fruity scent: blackcurrant and tangerine, a jasmine and iris heart, and a musky base.' },
+    { name: 'Sakina', price: 800, image: 'sakina.jpg', gallery: [], specs: {}, desc: 'Soft floral and warm musky scent with a smooth, elegant touch.' },
+    { name: 'Eman', price: 800, image: 'eman.jpg', gallery: [], specs: {}, desc: 'Feminine floral-fruity fragrance with a sweet, refined base.' },
     { name: 'Delina La Rosée', price: 850, image: 'delina.jpg', gallery: [], specs: { 'Size': '75 ml' }, desc: 'A soft, dewy rose floral with a fresh fruity sparkle.' },
-    { name: 'Gissah', price: 950, image: '', gallery: [], specs: {}, desc: 'A warm, rich scent built on leather and amber with a regal character.' },
-    { name: 'Olympea Flora', price: 650, image: '', gallery: [], specs: {}, desc: 'A light floral interpretation of the Olympea line, soft and feminine.' },
-    { name: 'Libre Mini (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A lavender and orange blossom scent with a warm musk-vanilla base.' },
-    { name: 'Good Girl (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A bold, sweet floral with jasmine, tuberose and almond over cocoa and tonka warmth.' },
+    { name: 'Gissah', price: 950, image: 'gissah pink.jpg', gallery: [], specs: {}, desc: 'A feminine Gissah fragrance in a signature pink bottle.' },
+    { name: 'Olympea Flora', price: 650, image: 'Olympéa Flora.jpg', gallery: [], specs: {}, desc: 'A light floral interpretation of the Olympea line, soft and feminine.' },
+    { name: 'Libre Mini (30ml)', price: 100, image: 'Libre Mini.jpg', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A lavender and orange blossom scent with a warm musk-vanilla base.' },
+    { name: 'Good Girl (30ml)', price: 100, image: 'good girl mini.jpg', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A bold, sweet floral with jasmine, tuberose and almond over cocoa and tonka warmth.' },
     { name: 'Laverne Splash', price: 200, image: '', gallery: [], specs: {}, desc: 'Light, refreshing mist-style scent ideal for daily freshness.' },
     { name: 'Arrogate Pink', price: 950, image: '', gallery: [], specs: {}, desc: 'A sweet, feminine floral with orange blossom and almond, jasmine and violet, over soft musk.' },
-    { name: 'Lipstick', price: 800, image: '', gallery: [], specs: {}, desc: 'A sweet powdery rose and iris perfume with a soft, vintage cosmetic vibe.' },
+    { name: 'Lipstick', price: 800, image: 'lipstick.jpg', gallery: [], specs: {}, desc: 'A sweet powdery rose and iris perfume with a soft, vintage cosmetic vibe.' },
     { name: 'Victoria (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'Sweet, alluring floral-vanilla scent in a compact travel size.' }
   ],
   'Unisex': [
@@ -55,7 +55,7 @@ const CATALOG = {
     { name: 'Erba Pura', price: 950, image: '', gallery: [], specs: {}, desc: 'A juicy, sunny fruity musk with warm amber-vanilla in the base.' },
     { name: 'Tom Ford', price: 650, image: '', gallery: [], specs: {}, desc: 'A rich, warm blend of sweet tobacco leaf and vanilla with spice, cocoa and dried fruit.' },
     { name: 'Black Afgano', price: 700, image: '', gallery: [], specs: {}, desc: 'A dark, resinous scent with incense and oud; intense and distinctive.' },
-    { name: 'Vanilla Powder', price: 550, image: '', gallery: [], specs: {}, desc: 'Soft powdery vanilla and sweet warm notes with a smooth, comforting trail.' }
+    { name: 'Vanilla Powder', price: 550, image: 'vanilla powder.jpg', gallery: [], specs: {}, desc: 'Soft powdery vanilla and sweet warm notes with a smooth, comforting trail.' }
   ],
   'Boxes & Sets': [
     { name: 'Risk Box', price: 1350, image: '', gallery: [], specs: {}, desc: 'Gift box selection combining signature scents and matching items.' },
@@ -168,7 +168,7 @@ function photoBox(p, file) {
     img.loading = 'lazy';
     img.alt = p.name;
     img.addEventListener('error', placeholder);
-    img.src = 'assets/products/' + file;
+    img.src = 'assets/products/' + encodeURIComponent(file);
     box.classList.add('has-img');
     box.appendChild(img);
   } else {
@@ -329,7 +329,7 @@ function showPmImage(i) {
     const im = el('img');
     im.alt = '';
     im.addEventListener('error', function () { b.style.display = 'none'; });
-    im.src = 'assets/products/' + f;
+    im.src = 'assets/products/' + encodeURIComponent(f);
     b.appendChild(im);
     b.addEventListener('click', function () { showPmImage(idx); });
     th.appendChild(b);
