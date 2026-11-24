@@ -23,50 +23,50 @@ const CATEGORIES = ['Men', 'Women', 'Unisex', 'Boxes & Sets'];
 const CATALOG = {
   'Men': [
     { name: 'Y (Yves Saint Laurent)', price: 650, image: '', gallery: [], specs: {}, desc: 'A fresh, clean woody-aromatic scent with apple, ginger and sage over amber woods.' },
-    { name: 'Laverne Balance', price: 750, image: '', gallery: [], specs: {}, desc: '' },
-    { name: '1 Million Gold', price: 750, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Laverne Balance', price: 750, image: '', gallery: [], specs: {}, desc: 'Fresh woody and aromatic blend with crisp spices and a clean modern base.' },
+    { name: '1 Million Gold', price: 750, image: '', gallery: [], specs: {}, desc: 'Bold warm amber and spicy leather scent with a rich sweet finish.' },
     { name: 'Stronger With You Intensely', price: 800, image: '', gallery: [], specs: {}, desc: 'A warm, sweet amber-vanilla scent with spicy and woody touches.' },
     { name: 'Stronger With You Absolutely', price: 800, image: '', gallery: [], specs: {}, desc: 'A deeper, richer take on the Stronger With You line.' },
-    { name: 'Fakhar Lattafa', price: 950, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Versace', price: 600, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Half Moon', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Fakhar Lattafa', price: 950, image: '', gallery: [], specs: {}, desc: 'Fresh spicy and fruity-woody fragrance with a smooth warm trail.' },
+    { name: 'Versace', price: 600, image: '', gallery: [], specs: {}, desc: 'A fresh minty-citrus opening with sweet vanilla and tonka over a woody base; bold and energetic.' },
+    { name: 'Half Moon', price: 650, image: '', gallery: [], specs: {}, desc: 'Deep woody and smoky-spicy scent with a rich dark character.' },
     { name: 'Dior Homme Intense', price: 650, image: '', gallery: [], specs: {}, desc: 'A smooth, powdery iris fragrance with lavender and warm woods.' },
-    { name: 'Parfums de Marly', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Parfums de Marly', price: 650, image: '', gallery: [], specs: {}, desc: 'A smooth blend of apple, lavender and vanilla over warm woods and spice.' },
     { name: 'Arrogate Blue', price: 950, image: '', gallery: [], specs: {}, desc: 'A bright opening of grapefruit, lemon and pink pepper that dries down to incense and vetiver.' },
-    { name: 'Issey Miyake', price: 750, image: '', gallery: [], specs: {}, desc: '' }
+    { name: 'Issey Miyake', price: 750, image: '', gallery: [], specs: {}, desc: 'A fresh, clean citrus-aquatic scent with a touch of spice and soft woods.' }
   ],
   'Women': [
     { name: 'Laverne Sense', price: 650, image: '', gallery: [], specs: {}, desc: 'A soft floral-fruity scent: blackcurrant and tangerine, a jasmine and iris heart, and a musky base.' },
-    { name: 'Sakina', price: 800, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Eman', price: 800, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Sakina', price: 800, image: '', gallery: [], specs: {}, desc: 'Soft floral and warm musky scent with a smooth, elegant touch.' },
+    { name: 'Eman', price: 800, image: '', gallery: [], specs: {}, desc: 'Feminine floral-fruity fragrance with a sweet, refined base.' },
     { name: 'Delina La Rosée', price: 850, image: 'delina.jpg', gallery: [], specs: { 'Size': '75 ml' }, desc: 'A soft, dewy rose floral with a fresh fruity sparkle.' },
-    { name: 'Gissah', price: 950, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Gissah', price: 950, image: '', gallery: [], specs: {}, desc: 'A warm, rich scent built on leather and amber with a regal character.' },
     { name: 'Olympea Flora', price: 650, image: '', gallery: [], specs: {}, desc: 'A light floral interpretation of the Olympea line, soft and feminine.' },
     { name: 'Libre Mini (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A lavender and orange blossom scent with a warm musk-vanilla base.' },
     { name: 'Good Girl (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A bold, sweet floral with jasmine, tuberose and almond over cocoa and tonka warmth.' },
-    { name: 'Laverne Splash', price: 200, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Laverne Splash', price: 200, image: '', gallery: [], specs: {}, desc: 'Light, refreshing mist-style scent ideal for daily freshness.' },
     { name: 'Arrogate Pink', price: 950, image: '', gallery: [], specs: {}, desc: 'A sweet, feminine floral with orange blossom and almond, jasmine and violet, over soft musk.' },
-    { name: 'Lipstick', price: 800, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Victoria (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: '' }
+    { name: 'Lipstick', price: 800, image: '', gallery: [], specs: {}, desc: 'A sweet powdery rose and iris perfume with a soft, vintage cosmetic vibe.' },
+    { name: 'Victoria (30ml)', price: 100, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'Sweet, alluring floral-vanilla scent in a compact travel size.' }
   ],
   'Unisex': [
     { name: 'Baccarat Rouge 540', price: 650, image: '', gallery: [], specs: {}, desc: 'An airy amber-floral with jasmine, saffron and cedar, known for its glowing sweet-woody trail.' },
-    { name: 'Vintage Tobacco', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Vintage Tobacco', price: 650, image: '', gallery: [], specs: {}, desc: 'Rich warm tobacco and spiced wood blend with a deep, cozy finish.' },
     { name: 'Erba Pura', price: 950, image: '', gallery: [], specs: {}, desc: 'A juicy, sunny fruity musk with warm amber-vanilla in the base.' },
-    { name: 'Tom Ford', price: 650, image: '', gallery: [], specs: {}, desc: '' },
+    { name: 'Tom Ford', price: 650, image: '', gallery: [], specs: {}, desc: 'A rich, warm blend of sweet tobacco leaf and vanilla with spice, cocoa and dried fruit.' },
     { name: 'Black Afgano', price: 700, image: '', gallery: [], specs: {}, desc: 'A dark, resinous scent with incense and oud; intense and distinctive.' },
-    { name: 'Vanilla Powder', price: 550, image: '', gallery: [], specs: {}, desc: '' }
+    { name: 'Vanilla Powder', price: 550, image: '', gallery: [], specs: {}, desc: 'Soft powdery vanilla and sweet warm notes with a smooth, comforting trail.' }
   ],
   'Boxes & Sets': [
-    { name: 'Risk Box', price: 1350, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Arrogate Box', price: 1600, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Laverne Bag', price: 1350, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Assaf Sunglasses Box', price: 2600, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Assaf Box (30ml)', price: 950, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: '' },
+    { name: 'Risk Box', price: 1350, image: '', gallery: [], specs: {}, desc: 'Gift box selection combining signature scents and matching items.' },
+    { name: 'Arrogate Box', price: 1600, image: '', gallery: [], specs: {}, desc: 'A gift box with one full-size Arrogate Pink perfume and four mini travel perfumes from the Arrogate collection.' },
+    { name: 'Laverne Bag', price: 1350, image: '', gallery: [], specs: {}, desc: 'A pink Laverne gift bag with a full-size Sense perfume and a matching Sense perfumed jar.' },
+    { name: 'Assaf Sunglasses Box', price: 2600, image: '', gallery: [], specs: {}, desc: 'A gift box with one full-size Assaf perfume, five mini Assaf perfumes and a pair of stylish sunglasses.' },
+    { name: 'Assaf Box (30ml)', price: 950, image: '', gallery: [], specs: { 'Size': '30 ml' }, desc: 'A gift box with six mini (30 ml) assorted Assaf perfumes, including Frankel, Miss Flora, Miss Sakura and Gris Dior.' },
     { name: 'The Body Shop Box', price: 650, image: '', gallery: [], specs: {}, desc: '' },
     { name: 'Bianco Latte Set', price: 750, image: '', gallery: [], specs: {}, desc: 'A creamy, milky-vanilla gourmand scent in a gift set.' },
-    { name: 'Musk Set', price: 900, image: '', gallery: [], specs: {}, desc: '' },
-    { name: 'Assaf 3-Piece Set', price: 500, image: '', gallery: [], specs: {}, desc: '' }
+    { name: 'Musk Set', price: 900, image: '', gallery: [], specs: {}, desc: 'Curated musk-focused fragrance set with clean, soft, and versatile scents.' },
+    { name: 'Assaf 3-Piece Set', price: 500, image: '', gallery: [], specs: {}, desc: 'A gift set with three mini perfumes from the Arrogate Pink collection.' }
   ]
 };
 
